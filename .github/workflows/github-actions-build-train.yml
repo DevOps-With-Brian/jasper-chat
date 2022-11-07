@@ -3,6 +3,11 @@ on:
     types:
       - opened
       - edited
+      - synchronize
+  push:
+    branches:
+      - 'main'
+      - 'feature/*'
 jobs:
   training-testing:
     name: Training and Testing
@@ -23,12 +28,12 @@ jobs:
       - name: Install Commitizen
         run: pip install -U Commitizen
       - name: Set Version
-        id: commitizen-version
         run: |
-          echo "COMMITIZEN_VER=`cz version -p`" >> $GITHUB_OUTPUT
+          echo "COMMITIZEN_VER=$(cz version -p)" >> $GITHUB_OUTPUT
+        id: commitizen-version
       - name: Echo Current Version
         run: |
-          echo "The current version is: ${{env.COMMITIZEN_VER}}"
+          echo "The current version is: ${{ env.COMMITIZEN_VER }}"
       - name: Move file to commitizen version
         run: |
           mv models/* models/model_{{ steps.commitizen-version.outputs.COMMITIZEN_VER }}.tar.gz
