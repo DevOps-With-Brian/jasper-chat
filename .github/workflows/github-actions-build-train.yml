@@ -1,3 +1,8 @@
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
 jobs:
   training-testing:
     name: Training and Testing
@@ -7,14 +12,16 @@ jobs:
       - name: Rasa Train and Test GitHub Action
         uses: RasaHQ/rasa-train-test-gha@main
         with:
-          requirements_file: requirements.txt
+          rasa_version: '3.3.0'
           data_validate: true
           rasa_train: true
-          cross_validation: true
+          cross_validation: false
           rasa_test: true
           test_type: all
           publish_summary: true
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.RASA_TOKEN }}
+      - name: Install Commitizen
+        run: pip install -U Commitizen
       - name: Set Version
         id: commitizen-version
         run: echo "COMMITIZEN_VER=`cz version -p`" >> $GITHUB_OUTPUT
