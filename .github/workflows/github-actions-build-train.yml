@@ -27,6 +27,8 @@ jobs:
           github_token: ${{ secrets.RASA_TOKEN }}
       - name: Install Commitizen
         run: pip install -U Commitizen
+      - name: Checking Commitizen Works
+        run: cz version -p
       - name: Set Version
         run: |
           echo "COMMITIZEN_VER=$(cz version -p)" >> $GITHUB_OUTPUT
