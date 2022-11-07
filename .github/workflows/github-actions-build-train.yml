@@ -24,11 +24,14 @@ jobs:
         run: pip install -U Commitizen
       - name: Set Version
         id: commitizen-version
-        run: echo "COMMITIZEN_VER=`cz version -p`" >> $GITHUB_OUTPUT
+        run: |
+          echo "COMMITIZEN_VER=`cz version -p`" >> $GITHUB_OUTPUT
       - name: Echo Current Version
-        run: echo "The current version is: ${{env.COMMITIZEN_VER}}"
+        run: |
+          echo "The current version is: ${{env.COMMITIZEN_VER}}"
       - name: Move file to commitizen version
-        run: mv models/* models/model_{{ steps.commitizen-version.outputs.COMMITIZEN_VER }}.tar.gz
+        run: |
+          mv models/* models/model_{{ steps.commitizen-version.outputs.COMMITIZEN_VER }}.tar.gz
       - name: Upload model
         if: github.ref == 'refs/heads/main'
         uses: actions/upload-artifact@master
