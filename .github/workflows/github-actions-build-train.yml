@@ -34,7 +34,7 @@ jobs:
           echo "The current version is: ${{ env.COMMITIZEN_VER }}"
       - name: Move file to commitizen version
         run: |
-          mv models/* models/model_{{ steps.commitizen-version.outputs.COMMITIZEN_VER }}.tar.gz
+          mv models/* models/model_${{ env.COMMITIZEN_VER }}.tar.gz
       - name: Upload model
         if: github.ref == 'refs/heads/main'
         uses: actions/upload-artifact@master
