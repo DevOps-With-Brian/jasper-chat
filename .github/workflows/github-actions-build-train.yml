@@ -31,7 +31,7 @@ jobs:
         run: cz version -p
       - name: Set Version
         run: |
-          echo ::set-env name=COMMITIZEN_VER::$(cz version -p)
+          echo "COMMITIZEN_VER=$(cz version -p)" >> $GITHUB_ENV"
         id: commitizen-version
       - name: Echo Current Version
         run: |
