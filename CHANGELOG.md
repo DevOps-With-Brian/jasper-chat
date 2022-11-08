@@ -1,3 +1,10 @@
+## 0.2.0 (2022-11-08)
+
+### Feat
+
+- **commitizen**: testing a version bump
+- **github-actions**: adding in a final step for github actions on release steps
+
 ## 0.1.1 (2022-11-08)
 
 ### Fix
