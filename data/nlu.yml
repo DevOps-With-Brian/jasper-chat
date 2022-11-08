@@ -38,6 +38,7 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - sounds correct.
 
 - intent: deny
   examples: |
