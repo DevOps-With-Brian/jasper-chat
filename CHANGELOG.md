@@ -1,3 +1,9 @@
+## 0.1.1 (2022-11-08)
+
+### Fix
+
+- **github-actions**: updating the github actions formatting and how they work
+
 ## 0.1.0 (2022-11-08)
 
 ### Feat
