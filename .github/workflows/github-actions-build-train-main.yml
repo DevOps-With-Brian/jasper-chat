@@ -22,6 +22,7 @@ jobs:
       - name: Print Version
         run: echo "Bumped to version ${{ steps.cz.outputs.version }}"
   training-testing:
+    needs: bump_version
     name: Train Model and Upload
     runs-on: ubuntu-latest
     steps:
@@ -38,8 +39,6 @@ jobs:
           publish_summary: false
       - name: Install Commitizen
         run: pip install -U Commitizen
-      - name: Bumping Version and Changelog
-        run: cz bump
       - name: Set Version
         run: |
           echo "COMMITIZEN_VER=$(cz version -p)" >> $GITHUB_ENV
