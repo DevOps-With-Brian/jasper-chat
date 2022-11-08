@@ -42,5 +42,5 @@ jobs:
         with:
           repo_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           file: models/model_${{ env.COMMITIZEN_VER }}.tar.gz
-          tag: ${{ github.ref }}
+          tag: ${{ env.COMMITIZEN_VER }}
           overwrite: true
