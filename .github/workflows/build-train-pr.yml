@@ -9,7 +9,11 @@ jobs:
     name: Training and Testing
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
+      - name: Install Commitizen
+        run: pip install -U Commitizen
+      - name: Check For Valid Commit Message
+        run: cz check -m ${{ github.event.head_commit.message }}
       - name: Rasa Train and Test GitHub Action
         uses: RasaHQ/rasa-train-test-gha@main
         with:
@@ -21,8 +25,6 @@ jobs:
           test_type: all
           publish_summary: true
           github_token: ${{ secrets.RASA_TOKEN }}
-      - name: Install Commitizen
-        run: pip install -U Commitizen
       - name: Checking Commitizen Works
         run: cz version -p
       - name: Set Version
