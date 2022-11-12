@@ -1,3 +1,9 @@
+## 0.3.1 (2022-11-12)
+
+### Fix
+
+- **domain.yml**: updating the greeting response (#16)
+
 ## 0.3.0 (2022-11-12)
 
 ### Feat
