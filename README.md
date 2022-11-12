@@ -6,7 +6,7 @@ I recommend if running on windows to setup WSL2 and setup ubuntu on it.  Then yo
 
 First things you will need is ensure you have python 3.7 or higher installed, after having that you should be able to do the following to setup your virtual env:
 
-`python3-m venv .venv`
+`python -m venv .venv`
 
 Now we can activate this virtual env and install our requirements.
 
@@ -20,3 +20,17 @@ Once activated we can install with:
 `pip install -r requirements.txt`
 
 This will install [Rasa](https://www.rasa.com) and [Commitizen](https://commitizen-tools.github.io/commitizen/)
+
+# Setup Rasa Base Files
+After installing [Rasa](https://www.rasa.com) and activating virtual env you can do the following to initialize a rasa base chatbot code:
+
+`python -m venv .venv`
+
+Linux
+`source .venv/bin/activate`
+
+Windows
+`.venv\Scripts\activate`
+
+Init Rasa Code
+`rasa init`
