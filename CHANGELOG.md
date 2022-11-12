@@ -1,3 +1,9 @@
+## 0.3.0 (2022-11-12)
+
+### Feat
+
+- **domain.yml**: updating the response for bot challenge (#15)
+
 ## 0.2.0 (2022-11-08)
 
 ### Feat
