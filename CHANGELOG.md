@@ -1,3 +1,9 @@
+## 0.4.0 (2022-12-11)
+
+### Feat
+
+- **help-menu**: added in help menu and a few other things to make Jasper a little smarter (#17)
+
 ## 0.3.1 (2022-11-12)
 
 ### Fix
