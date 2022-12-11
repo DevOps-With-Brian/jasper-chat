@@ -1,6 +1,9 @@
 version: "3.1"
 
 intents:
+  - thanks
+  - youtube
+  - help
   - greet
   - goodbye
   - affirm
@@ -10,18 +13,11 @@ intents:
   - bot_challenge
 
 responses:
+  utter_help:
+  - text: "Hello, I am Jasper and I can help you with things related to Brian's blog and YouTube.  You can ask me things like: What is your latest video, what articles do you have, and such."
+
   utter_greet:
-  - text: "Hey! How are you doing?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
+  - text: "Hello, I am Jasper, how can I help you?"
 
   utter_goodbye:
   - text: "Bye"
@@ -29,6 +25,11 @@ responses:
   utter_iamabot:
   - text: "I am a bot, powered by Rasa.  I am also now autoversioned."
 
+  utter_youtube:
+  - text: "I currently stream on YouTube and Twitch, you can find me on YouTube at https://www.youtube.com/@devopswithbrian and stream on Twitch Sunday and Wednesdays at https://www.twitch.tv/devopswithbrian"
+
+  utter_thanks:
+  - text: "You are welcome!"
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

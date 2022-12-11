@@ -6,7 +6,7 @@ I recommend if running on windows to setup WSL2 and setup ubuntu on it.  Then yo
 
 First things you will need is ensure you have python 3.7 or higher installed, after having that you should be able to do the following to setup your virtual env:
 
-`python3-m venv .venv`
+`python3 -m venv .venv`
 
 Now we can activate this virtual env and install our requirements.
 
