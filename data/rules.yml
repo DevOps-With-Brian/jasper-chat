@@ -7,6 +7,11 @@ rules:
   - intent: goodbye
   - action: utter_goodbye
 
+- rule: Say You Are Weclome anytime the user says thanks
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+
 - rule: Say 'I am a bot' anytime the user challenges
   steps:
   - intent: bot_challenge

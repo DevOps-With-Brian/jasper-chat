@@ -1,2 +1,2 @@
-rasa==3.3.0
+rasa==3.3.3
 Commitizen==2.37.0

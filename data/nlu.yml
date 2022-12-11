@@ -1,6 +1,18 @@
 version: "3.1"
 
 nlu:
+- intent: help
+  examples: |
+    - I need help
+    - help me
+    - help
+    - can you help me
+    - I want help
+    - Are you able to help me
+    - What can you help me with
+    - What can you do
+    - Are you able to help me
+
 - intent: greet
   examples: |
     - hey
@@ -50,39 +62,13 @@ nlu:
     - no way
     - not really
 
-- intent: mood_great
+- intent: thanks
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - thanks
+    - thank you
+    - appreciate it
+    - I appreciate it
+    - ok thanks
 
 - intent: bot_challenge
   examples: |
@@ -90,3 +76,13 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: youtube
+  examples: |
+    - What is your YouTube channel?
+    - do you have youtube videos?
+    - where are your videos?
+    - do you have any tutorial videos
+    - what is your youtube channel
+    - how can I get to your youtube
+    - how can I watch you.
