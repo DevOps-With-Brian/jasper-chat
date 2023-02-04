@@ -1,5 +1,4 @@
 version: "3.1"
-
 nlu:
 - intent: help
   examples: |
@@ -11,8 +10,6 @@ nlu:
     - Are you able to help me
     - What can you help me with
     - What can you do
-    - Are you able to help me
-
 - intent: greet
   examples: |
     - hey
@@ -28,7 +25,6 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
-
 - intent: goodbye
   examples: |
     - cu
@@ -41,7 +37,6 @@ nlu:
     - see you around
     - bye bye
     - see you later
-
 - intent: affirm
   examples: |
     - yes
@@ -51,7 +46,6 @@ nlu:
     - that sounds good
     - correct
     - sounds correct.
-
 - intent: deny
   examples: |
     - no
@@ -61,7 +55,6 @@ nlu:
     - don't like that
     - no way
     - not really
-
 - intent: thanks
   examples: |
     - thanks
@@ -69,14 +62,12 @@ nlu:
     - appreciate it
     - I appreciate it
     - ok thanks
-
 - intent: bot_challenge
   examples: |
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
-
 - intent: youtube
   examples: |
     - What is your YouTube channel?
@@ -86,3 +77,17 @@ nlu:
     - what is your youtube channel
     - how can I get to your youtube
     - how can I watch you.
+    - What is Brian's youtube channel?
+    - Does brian have a youtube channel?
+    - what is brian's youtube channel
+    - what is brian's youtube channel?
+- intent: github_repo
+  examples: |
+    - do you have a github repo for the code you are working on?
+    - where is the repo for your code?
+    - do you have a github for your twitch?
+    - what is your github information?
+    - how can I find your code?
+    - where is your code located?
+    - I want to look at your code.
+    - where is your github repo?

@@ -1,35 +1,31 @@
-version: "3.1"
-
+version: '3.1'
 intents:
-  - thanks
-  - youtube
-  - help
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-
+- affirm
+- bot_challenge
+- deny
+- goodbye
+- greet
+- help
+- mood_great
+- mood_unhappy
+- thanks
+- youtube
+- github_repo
 responses:
   utter_help:
   - text: "Hello, I am Jasper and I can help you with things related to Brian's blog and YouTube.  You can ask me things like: What is your latest video, what articles do you have, and such."
-
   utter_greet:
-  - text: "Hello, I am Jasper, how can I help you?"
-
+  - text: Hello, I am Jasper, how can I help you?
   utter_goodbye:
-  - text: "Bye"
-
+  - text: Bye
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa.  I am also now autoversioned."
-
+  - text: I am a bot, powered by Rasa.  I am also now autoversioned.
   utter_youtube:
-  - text: "I currently stream on YouTube and Twitch, you can find me on YouTube at https://www.youtube.com/@devopswithbrian and stream on Twitch Sunday and Wednesdays at https://www.twitch.tv/devopswithbrian"
-
+  - text: I currently stream on YouTube and Twitch, you can find me on YouTube at https://www.youtube.com/@devopswithbrian and stream on Twitch at https://www.twitch.tv/devopswithbrian
+  utter_github_repo:
+  - text: I have a GitHub organization for all my Twitch code and other stuff at https://github.com/orgs/DevOps-With-Brian/repositories and you can also find my personal GitHub at https://github.com/btotharye?tab=repositories.
   utter_thanks:
-  - text: "You are welcome!"
+  - text: You are welcome!
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

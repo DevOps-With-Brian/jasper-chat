@@ -62,3 +62,43 @@ stories:
       what is your youtube channel
     intent: youtube
   - action: utter_youtube
+
+- story: youtube path 3
+  steps:
+  - user: |
+      what is brian's youtube channel?
+    intent: youtube
+  - action: utter_youtube
+
+- story: github_repo path 1
+  steps:
+  - user: |
+      where is your github repo?
+    intent: github_repo
+  - action: utter_github_repo
+
+- story: yotube path 2
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      What can you help with?
+    intent: help
+  - action: utter_help
+  - user: |
+      where is your github repo?
+    intent: github_repo
+  - action: utter_github_repo
+
+- story: yotube path 3
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      where is your github repo?
+    intent: github_repo
+  - action: utter_github_repo

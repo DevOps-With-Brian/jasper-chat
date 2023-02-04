@@ -39,3 +39,31 @@ stories:
   - action: utter_help
   - intent: youtube
   - action: utter_youtube
+
+- story: interactive_story_1
+  steps:
+  - intent: youtube
+  - action: utter_youtube
+  - intent: youtube
+  - action: utter_youtube
+
+- story: github repo path 1
+  steps:
+  - intent: github_repo
+  - action: utter_github_repo
+
+- story: github repo path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help
+  - action: utter_help
+  - intent: github_repo
+  - action: utter_github_repo
+
+- story: github repo path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: github_repo
+  - action: utter_github_repo
