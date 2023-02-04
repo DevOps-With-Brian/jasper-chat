@@ -1,3 +1,9 @@
+## 0.5.0 (2023-02-04)
+
+### Feat
+
+- **new-commands**: added in some new commands and updated some exist… (#18)
+
 ## 0.4.0 (2022-12-11)
 
 ### Feat
