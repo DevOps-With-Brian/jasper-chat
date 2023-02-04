@@ -21,3 +21,8 @@ Once activated we can install with:
 
 This will install [Rasa](https://www.rasa.com) and [Commitizen](https://commitizen-tools.github.io/commitizen/)
 
+# How To Run Locally
+After performing the above you can run the bot locally via:
+
+`rasa run --cors '*' --debug`
+
