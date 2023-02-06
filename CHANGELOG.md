@@ -1,3 +1,9 @@
+## 0.6.0 (2023-02-06)
+
+### Feat
+
+- **nlu**: adding in some new nlu responses (#19)
+
 ## 0.5.0 (2023-02-04)
 
 ### Feat
