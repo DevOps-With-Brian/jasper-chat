@@ -77,7 +77,7 @@ stories:
     intent: github_repo
   - action: utter_github_repo
 
-- story: yotube path 2
+- story: github_repo path 2
   steps:
   - user: |
       hello
@@ -92,7 +92,7 @@ stories:
     intent: github_repo
   - action: utter_github_repo
 
-- story: yotube path 3
+- story: github_repo path 3
   steps:
   - user: |
       hello
@@ -102,3 +102,36 @@ stories:
       where is your github repo?
     intent: github_repo
   - action: utter_github_repo
+
+- story: source_code path 1
+  steps:
+  - user: |
+      do you have source code?
+    intent: source_code
+  - action: utter_source_code
+
+- story: source_code path 2
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      What can you help with?
+    intent: help
+  - action: utter_help
+  - user: |
+      how do you work?
+    intent: source_code
+  - action: utter_source_code
+
+- story: source_code path 3
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      do you have source code?
+    intent: source_code
+  - action: utter_source_code

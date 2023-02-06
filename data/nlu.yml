@@ -1,5 +1,12 @@
 version: "3.1"
 nlu:
+- intent: out_of_scope
+  examples: |
+    - Who's the US President?
+    - What is 2 + 2?
+    - How do I code in python?
+    - what is world of warcraft
+    - who is marilyn monroe?
 - intent: help
   examples: |
     - I need help
@@ -91,3 +98,11 @@ nlu:
     - where is your code located?
     - I want to look at your code.
     - where is your github repo?
+- intent: source_code
+  examples: |
+    - where is your source code bot?
+    - do you have source code?
+    - can I find out what makes you work?
+    - how do you work?
+    - what language are you written in?
+    - is there source code for you?

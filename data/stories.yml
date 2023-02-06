@@ -67,3 +67,30 @@ stories:
   - action: utter_greet
   - intent: github_repo
   - action: utter_github_repo
+
+- story: source_code repo path 1
+  steps:
+  - intent: source_code
+  - action: utter_source_code
+
+- story: source_code repo path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help
+  - action: utter_help
+  - intent: source_code
+  - action: utter_source_code
+
+- story: source_code repo path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: source_code
+  - action: utter_source_code
+- story: interactive_story_1
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  - intent: out_of_scope
+  - action: utter_out_of_scope

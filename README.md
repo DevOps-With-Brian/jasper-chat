@@ -1,5 +1,5 @@
-# chatbot-auto-versioning
-Setting up auto versioning using [Commitizen](https://commitizen-tools.github.io/commitizen/) on a basic [Rasa](https://www.rasa.com) chatbot.
+# Jasper Chatbot
+A chatbot for my Twitch and Website that uses auto versioning via [Commitizen](https://commitizen-tools.github.io/commitizen/) and runs off [Rasa](https://www.rasa.com).
 
 # Environment Setup
 I recommend if running on windows to setup WSL2 and setup ubuntu on it.  Then you can clone the repo to this setup and do `code .` with Visual Studio installed on your windows machine and edit the code,etc.  If you are on a Mac some of this will differ depending on Rasa.  Rasa up until recently had issues with silicon macs due to a tensorflow issue, this should have been resolved in the most recent version we are using.
