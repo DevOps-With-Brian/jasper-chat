@@ -1,3 +1,9 @@
+## 0.7.0 (2023-02-09)
+
+### Feat
+
+- **action-server**: adding in action server for cosmos of the day api (#21)
+
 ## 0.6.0 (2023-02-06)
 
 ### Feat
