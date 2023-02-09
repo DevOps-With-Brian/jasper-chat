@@ -3,7 +3,7 @@
 models/*
 results/*
 
-actions_deploy/k8s_nasa_secret.yaml
+actions_deploy/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

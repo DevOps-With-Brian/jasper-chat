@@ -1,9 +1,0 @@
-registry: docker.io
-
-extraEnv:
-  - name: API_KEY
-    value: "nVbgCS7ZCw1i4jVUagAvQbr6RqlbSLhWJ0jZ1njV"
-
-image:
-  name: "devopswithbrian/jasper-actions"
-  tag: "latest"
