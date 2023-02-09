@@ -28,4 +28,14 @@ jobs:
     - shell: pwsh
       # steps.<step_id>.outputs.<output name>
       if: steps.check_file_changed.outputs.actions_changed == 'True'
-      run: echo would run our Rasa action push action here...
+      steps:
+        - name: Build Action Image & Push To Dockerhub
+          uses: RasaHQ/rasa-action-server-gha@main
+          with:
+            actions_directory: 'actions'
+            requirements_file: 'actions/requirements-actions.txt'
+            docker_registry: docker.io
+            docker_registry_login: ${{ secrets.DOCKER_HUB_LOGIN }}
+            docker_registry_password: ${{ secrets.DOCKER_HUB_PASSWORD }}
+            docker_image_name: 'devopswithbrian/jasper-actions'
+            rasa_sdk_version: 3.3.0
