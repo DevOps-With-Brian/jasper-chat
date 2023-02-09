@@ -13,6 +13,7 @@ intents:
 - source_code
 - thanks
 - youtube
+- nasa_apod
 responses:
   utter_out_of_scope:
   - text: I'm sorry I don't know how to answer that yet, but I'm learning new things every day!
@@ -37,3 +38,4 @@ session_config:
   carry_over_slots_to_new_session: true
 actions:
 - utter_out_of_scope
+- action_apod

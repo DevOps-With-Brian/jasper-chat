@@ -94,3 +94,24 @@ stories:
   - action: utter_out_of_scope
   - intent: out_of_scope
   - action: utter_out_of_scope
+
+- story: nasa_apod repo path 1
+  steps:
+  - intent: nasa_apod
+  - action: action_apod
+
+- story: nasa_apod repo path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help
+  - action: utter_help
+  - intent: nasa_apod
+  - action: action_apod
+
+- story: nasa_apod repo path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: nasa_apod
+  - action: action_apod
