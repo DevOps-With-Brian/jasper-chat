@@ -11,7 +11,7 @@ COPY actions/requirements-actions.txt ./
 USER root
 
 # Install extra requirements for actions code, if necessary (uncomment next line)
-RUN pip install -r requirements-actions.txt
+RUN pip install --no-cache-dir -r requirements-actions.txt
 
 # Copy actions folder to working directory
 COPY ./actions /app/actions
