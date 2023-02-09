@@ -135,3 +135,36 @@ stories:
       do you have source code?
     intent: source_code
   - action: utter_source_code
+
+- story: nasa_apod path 1
+  steps:
+  - user: |
+      can you give me the nasa pic of the day
+    intent: nasa_apod
+  - action: action_apod
+
+- story: nasa_apod path 2
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      What can you help with?
+    intent: help
+  - action: utter_help
+  - user: |
+      I want to see the apod
+    intent: nasa_apod
+  - action: action_apod
+
+- story: nasa_apod path 3
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      I want to discover the cosmos
+    intent: nasa_apod
+  - action: action_apod

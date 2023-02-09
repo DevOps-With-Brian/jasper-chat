@@ -106,3 +106,13 @@ nlu:
     - how do you work?
     - what language are you written in?
     - is there source code for you?
+- intent: nasa_apod
+  examples: |
+    - give me the apod please
+    - can you give me the nasa pic of the day
+    - can you give me the astronomy picture of the day
+    - apod please
+    - I want to see the apod
+    - show me a cool space pic
+    - I want to discover the cosmos
+    - show me the cosmos
