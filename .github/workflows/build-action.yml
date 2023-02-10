@@ -7,14 +7,20 @@ on:
       - Dockerfile
 jobs:
   build_image:
+    runs-on: ubuntu-latest
+    name: Build and push Action Server image
     steps:
-      - name: Build Action Image & Push To Dockerhub
-        uses: RasaHQ/rasa-action-server-gha@main
-        with:
-          actions_directory: 'actions'
-          requirements_file: 'actions/requirements-actions.txt'
-          docker_registry: docker.io
-          docker_registry_login: ${{ secrets.DOCKER_HUB_LOGIN }}
-          docker_registry_password: ${{ secrets.DOCKER_HUB_PASSWORD }}
-          docker_image_name: 'devopswithbrian/jasper-actions'
-          rasa_sdk_version: 3.3.0
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - id: action_server
+      name: Build Action Image & Push To Dockerhub
+      uses: RasaHQ/rasa-action-server-gha@main
+      with:
+        actions_directory: 'actions'
+        requirements_file: 'actions/requirements-actions.txt'
+        docker_registry: docker.io
+        docker_registry_login: ${{ secrets.DOCKER_HUB_LOGIN }}
+        docker_registry_password: ${{ secrets.DOCKER_HUB_PASSWORD }}
+        docker_image_name: 'devopswithbrian/jasper-actions'
+        rasa_sdk_version: 3.3.0
