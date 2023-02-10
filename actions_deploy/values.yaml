@@ -1,0 +1,6 @@
+registry: docker.io
+
+image:
+  name: "devopswithbrian/jasper-actions"
+  tag: "latest"
+  pullPolicy: Always
