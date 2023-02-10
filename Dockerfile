@@ -1,4 +1,4 @@
-# Extend the official Rasa SDK image
+# Extend the official Rasa SDK image, just a test.
 FROM rasa/rasa-sdk:3.3.0
 
 # Use subdirectory as working directory
