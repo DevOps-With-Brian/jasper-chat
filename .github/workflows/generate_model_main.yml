@@ -2,11 +2,11 @@ on:
   push:
     branches:
       - 'main'
-  paths-ignore:
-    - 'actions/**'
-    - Dockerfile
-    - README.md
-    - actions_deploy
+    paths-ignore:
+      - 'actions/**'
+      - Dockerfile
+      - README.md
+      - actions_deploy
       
 jobs:
   training-testing:

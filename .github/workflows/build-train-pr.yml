@@ -4,11 +4,11 @@ on:
       - opened
       - edited
       - synchronize
-  paths-ignore:
-    - 'actions/**'
-    - Dockerfile
-    - README.md
-    - actions_deploy
+    paths-ignore:
+      - 'actions/**'
+      - Dockerfile
+      - README.md
+      - actions_deploy
 jobs:
   training-testing:
     name: Training and Testing
