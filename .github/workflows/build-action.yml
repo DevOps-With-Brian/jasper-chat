@@ -3,7 +3,8 @@ on:
     branches:
       - 'main'
 jobs:
-  runs-on: ubuntu-latest  # windows-latest | macos-latest
+  build:
+    runs-on: ubuntu-latest  # windows-latest | macos-latest
     name: Check For Action File Changes
     steps:
       - uses: actions/checkout@v3
@@ -39,7 +40,14 @@ jobs:
         if: | 
           steps.actiondir-changes.outputs.any_changed == 'true' ||
           steps.dockerfile-changes.outputs.any_changed == 'true'
-        run: |
-          echo "One or more files in the actions folder has changed."
-          echo "List all the files that have changed: ${{ steps.actiondir-changes.outputs.all_changed_files }}"
-          echo "List all the files that have changed: ${{ steps.dockerfile-changes.outputs.all_changed_files }}"
+        steps:
+        - name: Build Action Image & Push To Dockerhub
+          uses: RasaHQ/rasa-action-server-gha@main
+          with:
+            actions_directory: 'actions'
+            requirements_file: 'actions/requirements-actions.txt'
+            docker_registry: docker.io
+            docker_registry_login: ${{ secrets.DOCKER_HUB_LOGIN }}
+            docker_registry_password: ${{ secrets.DOCKER_HUB_PASSWORD }}
+            docker_image_name: 'devopswithbrian/jasper-actions'
+            rasa_sdk_version: 3.3.0
