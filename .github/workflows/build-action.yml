@@ -23,4 +23,5 @@ jobs:
         docker_registry_login: ${{ secrets.DOCKER_HUB_LOGIN }}
         docker_registry_password: ${{ secrets.DOCKER_HUB_PASSWORD }}
         docker_image_name: 'devopswithbrian/jasper-actions'
+        docker_image_tag: 'latest'
         rasa_sdk_version: 3.3.0
