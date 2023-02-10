@@ -2,45 +2,17 @@ on:
   push:
     branches:
       - 'main'
+    paths:
+      - actions/**
+      - Dockerfile
 jobs:
-  build:
-    runs-on: ubuntu-latest  # windows-latest | macos-latest
-    name: Check For Action File Changes
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0  # OR "2" -> To retrieve the preceding commit.
-
-      # Checking for changed files
-      - name: Get changed files
-        id: changed-files
-        uses: tj-actions/changed-files@v35
-
-      - name: List all changed files
-        run: |
-          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
-            echo "$file was changed"
-          done
-
-      # Checking for actions/* file changes
-      - name: Get changed files in the action folder
-        id: actiondir-changes
-        uses: tj-actions/changed-files@v35
-        with:
-          files: actions/**
-
-      # Checking for actions/* file changes
-      - name: Get changed files in the action folder
-        id: dockerfile-changes
-        uses: tj-actions/changed-files@v35
-        with:
-          files: Dockerfile
-
-      - name: Run step if any file(s) in the actions folder change
-        if: | 
-          steps.actiondir-changes.outputs.any_changed == 'true' ||
-          steps.dockerfile-changes.outputs.any_changed == 'true'
-        steps:
+  build_image:
+  steps:
+    - name: Run step if any file(s) in the actions folder change
+      if: | 
+        steps.actiondir-changes.outputs.any_changed == 'true' ||
+        steps.dockerfile-changes.outputs.any_changed == 'true'
+      steps:
         - name: Build Action Image & Push To Dockerhub
           uses: RasaHQ/rasa-action-server-gha@main
           with:
