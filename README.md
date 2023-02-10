@@ -30,4 +30,3 @@ After performing the above you can run the bot locally via:
 This is deployed via the Rasa helm chart values file located in the `rasa` dir of [DevOps With Brian's LKE Repo](https://github.com/DevOps-With-Brian/devops-brian-lke/tree/main/rasa).
 
 More info in that location can be found on deploying.
-
