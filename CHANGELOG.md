@@ -1,3 +1,9 @@
+## 0.9.0 (2023-02-11)
+
+### Feat
+
+- **nlu**: adding in training data for what is devops (#38)
+
 ## 0.8.0 (2023-02-11)
 
 ### Feat
