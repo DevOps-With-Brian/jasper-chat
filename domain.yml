@@ -18,7 +18,7 @@ responses:
   utter_out_of_scope:
   - text: I'm sorry I don't know how to answer that yet, but I'm learning new things every day!
   utter_help:
-  - text: "Hello, I am Jasper and I can help you with things related to Brian's blog and YouTube.  You can ask me things like: What is your latest video, what articles do you have, and such."
+  - text: "Hello, I am Jasper and I can help you with with things related to DevOps, Showing you the cosmos, or even how to access my source code.  How can I help you?"
   utter_greet:
   - text: Hello, I am Jasper, how can I help you?
   utter_goodbye:
