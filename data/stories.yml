@@ -95,6 +95,7 @@ stories:
   - intent: out_of_scope
   - action: utter_out_of_scope
 
+# Nasa Story Path
 - story: nasa_apod repo path 1
   steps:
   - intent: nasa_apod
@@ -115,3 +116,25 @@ stories:
   - action: utter_greet
   - intent: nasa_apod
   - action: action_apod
+
+# What Is DevOps Path
+- story: what_is_devops repo path 1
+  steps:
+  - intent: what_is_devops
+  - action: utter_what_is_devops
+
+- story: what_is_devops repo path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help
+  - action: utter_help
+  - intent: what_is_devops
+  - action: utter_what_is_devops
+
+- story: what_is_devops repo path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: what_is_devops
+  - action: utter_what_is_devops

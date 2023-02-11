@@ -116,3 +116,14 @@ nlu:
     - show me a cool space pic
     - I want to discover the cosmos
     - show me the cosmos
+- intent: what_is_devops
+  examples: |
+    - what is devops
+    - can you explain to me what DevOps is?
+    - what in the heck is devops?
+    - I want to know more about what DevOps is
+    - can you explain to me anything about DevOps
+    - I have no idea what devops even is
+    - I'd like a brief explanation of devops
+    - can you give me an explanation of devops
+    - teach me some devops

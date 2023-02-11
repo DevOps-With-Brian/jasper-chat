@@ -14,6 +14,7 @@ intents:
 - thanks
 - youtube
 - nasa_apod
+- what_is_devops
 responses:
   utter_out_of_scope:
   - text: I'm sorry I don't know how to answer that yet, but I'm learning new things every day!
@@ -33,6 +34,8 @@ responses:
   - text: I run on python and Rasa open source, and you can find my source code at https://github.com/DevOps-With-Brian/chatbot-auto-versioning
   utter_thanks:
   - text: You are welcome!
+  utter_what_is_devops:
+  - text: DevOps can mean a lot of things to a lot of different people, however at its very basic practice it is using a set of tools, pratices, and cultural philosophy's to automate and/or integrate processes between a software/development team and traditional IT/Operations teams.  Typically a job of a DevOps engineer is to optimize and speed up software delivery processes.  For more information please see https://www.atlassian.com/devops
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
