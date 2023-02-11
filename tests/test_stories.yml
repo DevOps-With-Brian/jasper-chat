@@ -168,3 +168,37 @@ stories:
       I want to discover the cosmos
     intent: nasa_apod
   - action: action_apod
+
+# What Is DevOps Test Path
+- story: what_is_devops path 1
+  steps:
+  - user: |
+      can you explain to me what DevOps is?
+    intent: what_is_devops
+  - action: utter_what_is_devops
+
+- story: what_is_devops path 2
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      What can you help with?
+    intent: help
+  - action: utter_help
+  - user: |
+      I want to know more about what DevOps is
+    intent: what_is_devops
+  - action: utter_what_is_devops
+
+- story: what_is_devops path 3
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      I have no idea what devops even is
+    intent: what_is_devops
+  - action: utter_what_is_devops
