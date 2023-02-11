@@ -1,3 +1,9 @@
+## 0.8.0 (2023-02-11)
+
+### Feat
+
+- **help-response**: updating the help response for more of what jasper can do (#37)
+
 ## 0.7.0 (2023-02-09)
 
 ### Feat
