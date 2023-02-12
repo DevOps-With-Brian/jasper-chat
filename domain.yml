@@ -25,7 +25,7 @@ responses:
   utter_goodbye:
   - text: Bye
   utter_iamabot:
-  - text: I am a bot, powered by Rasa.  I am also now autoversioned.
+  - text: I am a bot, powered by Rasa.  I am also now autoversioned.  You can find more about the things I know about via my NLU training at https://github.com/DevOps-With-Brian/chatbot-auto-versioning/blob/main/data/nlu.yml
   utter_youtube:
   - text: I currently stream on YouTube and Twitch, you can find me on YouTube at https://www.youtube.com/@devopswithbrian and stream on Twitch at https://www.twitch.tv/devopswithbrian
   utter_github_repo:
