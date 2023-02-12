@@ -1,3 +1,9 @@
+## 0.10.0 (2023-02-12)
+
+### Feat
+
+- **domain.yml**: updating the help response to include the NLU training data location (#40)
+
 ## 0.9.0 (2023-02-11)
 
 ### Feat
