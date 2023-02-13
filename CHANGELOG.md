@@ -1,3 +1,9 @@
+## 0.11.0 (2023-02-13)
+
+### Feat
+
+- **domain.yml**: updating bye response (#41)
+
 ## 0.10.0 (2023-02-12)
 
 ### Feat
