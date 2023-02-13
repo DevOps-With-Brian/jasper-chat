@@ -23,7 +23,7 @@ responses:
   utter_greet:
   - text: Hello, I am Jasper, how can I help you?
   utter_goodbye:
-  - text: Bye
+  - text: Bye, have a nice day!
   utter_iamabot:
   - text: I am a bot, powered by Rasa.  I am also now autoversioned.  You can find more about the things I know about via my NLU training at https://github.com/DevOps-With-Brian/chatbot-auto-versioning/blob/main/data/nlu.yml
   utter_youtube:
