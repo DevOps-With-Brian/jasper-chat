@@ -49,3 +49,17 @@ jobs:
           file: models/model_${{ env.COMMITIZEN_VER }}.tar.gz
           tag: ${{ env.COMMITIZEN_VER }}
           overwrite: true
+      - name: Check out my other private repo
+        uses: actions/checkout@main
+        with:
+          repository: DevOps-With-Brian/devops-brian-lke
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+      - name: Modify the Rasa Deploy File & Push
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+          cd devops-brian-lke
+          yq -i e  '.rasa.applicationSettings.initialModel |= "https://github.com/DevOps-With-Brian/chatbot-auto-versioning/releases/download/${{ env.COMMITIZEN_VER }}/model_${{ env.COMMITIZEN_VER }}.tar.gz"' rasa/rasa-values.yaml
+          git add rasa/rasa-values.yaml
+          git commit -m "ci: deploying updated rasa version"
+          git push origin main
