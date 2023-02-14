@@ -58,7 +58,6 @@ jobs:
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
-          cd devops-brian-lke
           yq -i e  '.rasa.applicationSettings.initialModel |= "https://github.com/DevOps-With-Brian/chatbot-auto-versioning/releases/download/${{ env.COMMITIZEN_VER }}/model_${{ env.COMMITIZEN_VER }}.tar.gz"' rasa/rasa-values.yaml
           git add rasa/rasa-values.yaml
           git commit -m "ci: deploying updated rasa version"
