@@ -5,6 +5,7 @@ on:
     paths:
       - actions/**
       - Dockerfile
+      - docs/**
 jobs:
   build_image:
     runs-on: ubuntu-latest
