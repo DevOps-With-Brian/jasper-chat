@@ -1,3 +1,9 @@
+## 0.12.0 (2023-02-14)
+
+### Feat
+
+- **test**: trying to trigger a new version bump to test things (#42)
+
 ## 0.11.0 (2023-02-13)
 
 ### Feat
