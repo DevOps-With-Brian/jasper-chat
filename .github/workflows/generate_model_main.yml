@@ -7,6 +7,7 @@ on:
       - Dockerfile
       - README.md
       - actions_deploy
+      - docs/**
       
 jobs:
   training-testing:
