@@ -31,7 +31,7 @@ responses:
   utter_github_repo:
   - text: I have a GitHub organization for all my Twitch code and other stuff at https://github.com/orgs/DevOps-With-Brian/repositories and you can also find my personal GitHub at https://github.com/btotharye?tab=repositories.
   utter_source_code:
-  - text: I run on python and Rasa open source, and you can find my source code at https://github.com/DevOps-With-Brian/chatbot-auto-versioning
+  - text: I run on python and Rasa open source, and you can find my source code at https://github.com/DevOps-With-Brian/jasper-chat
   utter_thanks:
   - text: You are welcome!
   utter_what_is_devops:
