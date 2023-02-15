@@ -1,4 +1,6 @@
 # Jasper Chatbot
+[![Documentation Status](https://readthedocs.org/projects/jasper-chat/badge/?version=latest)](https://jasper-chat.readthedocs.io/en/latest/?badge=latest)
+
 A chatbot for my Twitch and Website that uses auto versioning via [Commitizen](https://commitizen-tools.github.io/commitizen/) and runs off [Rasa](https://www.rasa.com).
 
 # Environment Setup
