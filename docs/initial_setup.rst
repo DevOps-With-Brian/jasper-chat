@@ -63,3 +63,13 @@ This will allow you to interact with the chatbot from the shell.  If you wanted 
 
 .. parsed-literal::
     rasa run --cors '*' --debug
+
+
+Interacting With Bot
+---------------------
+So if you ran the rasa shell command you should be able to now talk to the bot from the command line, this is the easiest way to test your work and ensure the bot is working correctly.
+
+You can also run commands like below to have it run through the tests dir and check for any issues based on currently maintained tests.
+
+.. parsed-literal::
+    rasa test -s tests

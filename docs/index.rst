@@ -15,3 +15,5 @@ This is documentation for project jasper which is a chatbot made on `Rasa <https
    :hidden:
 
    initial_setup
+   contributing_to_bot
+   
