@@ -138,3 +138,25 @@ stories:
   - action: utter_greet
   - intent: what_is_devops
   - action: utter_what_is_devops
+
+# What Is IaC Path
+- story: what_is_iac repo path 1
+  steps:
+  - intent: what_is_iac
+  - action: utter_what_is_iac
+
+- story: what_is_iac repo path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help
+  - action: utter_help
+  - intent: what_is_iac
+  - action: utter_what_is_iac
+
+- story: what_is_iac repo path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: what_is_iac
+  - action: utter_what_is_iac
