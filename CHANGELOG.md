@@ -1,3 +1,9 @@
+## 0.14.0 (2023-02-18)
+
+### Feat
+
+- **iac-response**: adding in the response for iac intents (#45)
+
 ## 0.13.1 (2023-02-15)
 
 ### Fix
