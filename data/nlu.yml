@@ -127,3 +127,15 @@ nlu:
     - I'd like a brief explanation of devops
     - can you give me an explanation of devops
     - teach me some devops
+- intent: what_is_iac
+  examples: |
+    - what does IaC mean?
+    - what does iac mean?
+    - what is infrastructure as code?
+    - can you tell me more about iac
+    - can you tell me more about IaC
+    - I want to know more about infrastructure as code
+    - what in the world is iac
+    - what kinda nonsense is infrastructure as code
+    - I'd like to learn more about iac
+    

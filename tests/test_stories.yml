@@ -202,3 +202,37 @@ stories:
       I have no idea what devops even is
     intent: what_is_devops
   - action: utter_what_is_devops
+
+# What Is IaC Test Path
+- story: what_is_iac path 1
+  steps:
+  - user: |
+      can you tell me more about IaC?
+    intent: what_is_iac
+  - action: utter_what_is_iac
+
+- story: what_is_iac path 2
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      What can you help with?
+    intent: help
+  - action: utter_help
+  - user: |
+      What can you tell me about infrastructure as code?
+    intent: what_is_iac
+  - action: utter_what_is_iac
+
+- story: what_is_iac path 3
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      I have no idea what iac means
+    intent: what_is_iac
+  - action: utter_what_is_iac
