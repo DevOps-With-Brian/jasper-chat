@@ -160,3 +160,25 @@ stories:
   - action: utter_greet
   - intent: what_is_iac
   - action: utter_what_is_iac
+
+# Snake Room Temp Paths
+- story: snake_room_temp path 1
+  steps:
+  - intent: snake_room_temp
+  - action: action_snake_temp
+
+- story: snake_room_temp path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help
+  - action: utter_help
+  - intent: snake_room_temp
+  - action: action_snake_temp
+
+- story: snake_room_temp path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: snake_room_temp
+  - action: action_snake_temp

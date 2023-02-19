@@ -16,6 +16,7 @@ intents:
 - nasa_apod
 - what_is_devops
 - what_is_iac
+- snake_room_temp
 responses:
   utter_out_of_scope:
   - text: I'm sorry I don't know how to answer that yet, but I'm learning new things every day!
@@ -45,3 +46,4 @@ session_config:
 actions:
 - utter_out_of_scope
 - action_apod
+- action_snake_temp
