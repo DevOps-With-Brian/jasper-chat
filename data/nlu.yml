@@ -138,3 +138,13 @@ nlu:
     - what in the world is iac
     - what kinda nonsense is infrastructure as code
     - I'd like to learn more about iac
+- intent: snake_room_temp
+  examples: |
+    - what is the current reading of the snake room?
+    - what was the last temperature reading of the snake room
+    - what was the last temp reading of the snake room
+    - what is the temp in the snake room?
+    - do you know what the snake room temp is atm?
+    - what is the current snake room temperature
+    - I'd like to know the snake room temperature
+    - is there a way you can tell me about the snake room temps

@@ -236,3 +236,37 @@ stories:
       I have no idea what iac means
     intent: what_is_iac
   - action: utter_what_is_iac
+
+# Snake Room Temp Test Path
+- story: snake_room_temp path 1
+  steps:
+  - user: |
+      can you give me the last snake room temperature?
+    intent: snake_room_temp
+  - action: action_snake_temp
+
+- story: snake_room_temp path 2
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      What can you help with?
+    intent: help
+  - action: utter_help
+  - user: |
+      I'd like to know the snake room temperature
+    intent: snake_room_temp
+  - action: action_snake_temp
+
+- story: snake_room_temp path 3
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      can you tell me the snake room temp please
+    intent: snake_room_temp
+  - action: action_snake_temp
