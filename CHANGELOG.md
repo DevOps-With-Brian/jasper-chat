@@ -1,3 +1,9 @@
+## 0.15.0 (2023-02-19)
+
+### Feat
+
+- **snake-temps**: adding in the required components for the snake room temp intent (#46)
+
 ## 0.14.0 (2023-02-18)
 
 ### Feat
