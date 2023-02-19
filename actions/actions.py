@@ -70,7 +70,7 @@ class ActionSnaketemp(Action):
         # Fauna GraphQL endpoint
         now = datetime.now() # current date and time
         accessToken = os.getenv('FAUNA_KEY')
-        endpoint = "https://graphql.us.fauna.com/graphql"
+        endpoint = f"https://graphql.us.fauna.com/graphql"
         headers = {
             'Authorization': f"Bearer {accessToken}"
         }
