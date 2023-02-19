@@ -70,7 +70,7 @@ class ActionSnaketemp(Action):
         # Fauna GraphQL endpoint
         now = datetime.now() # current date and time
         accessToken = os.getenv('FAUNA_KEY')
-        endpoint = f"https://graphql.us.fauna.com/graphql"
+        endpoint = "https://graphql.us.fauna.com/graphql"
         headers = {
             'Authorization': f"Bearer {accessToken}"
         }
@@ -97,6 +97,7 @@ class ActionSnaketemp(Action):
         # Check the status code of the response
         if response.status_code == 200:
             # If the status code is 200 (OK), get the JSON data from the response
+            print(response.json())
             temp_results = response.json()['data']
             temp_list = temp_results['tempsByDate']['data']
             latest_temp_index = len(temp_list) - 1
