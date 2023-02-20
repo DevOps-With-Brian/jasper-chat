@@ -3,6 +3,10 @@
 models/*
 results/*
 
+# Deploy Secrets
+actions_deploy/jasper_action_secret.yml
+actions_deploy/jasper_action_secrets.yml
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

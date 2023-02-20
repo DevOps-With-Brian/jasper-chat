@@ -100,7 +100,8 @@ class ActionSnaketemp(Action):
             print(response.json())
             temp_results = response.json()['data']
             temp_list = temp_results['tempsByDate']['data']
-            latest_temp_index = len(temp_list) - 1
+            latest_temp_index = (len(temp_list) - 1)
+            print(latest_temp_index)
             latest_temp = temp_list[latest_temp_index]['temp']
             latest_temp_time = temp_list[latest_temp_index]['time']
 
