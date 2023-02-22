@@ -32,11 +32,10 @@ class ActionAPOD(Action):
 
 
         # API key
-        api_key = os.getenv("API_KEY")
-        print(api_key)
+        nasa_api_key = os.getenv("NASA_API_KEY")
 
         # Make a GET request to the endpoint with the API key
-        response = requests.get(api_url + "?api_key=" + api_key)
+        response = requests.get(api_url + "?api_key=" + nasa_api_key)
 
         # Check the status code of the response
         if response.status_code == 200:
