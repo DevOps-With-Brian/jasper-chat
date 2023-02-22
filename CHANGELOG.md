@@ -1,3 +1,9 @@
+## 0.16.0 (2023-02-22)
+
+### Feat
+
+- **doppler**: changing api names for doppler change
+
 ## 0.15.0 (2023-02-19)
 
 ### Feat
