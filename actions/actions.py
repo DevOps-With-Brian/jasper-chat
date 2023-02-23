@@ -5,6 +5,7 @@
 # https://rasa.com/docs/rasa/custom-actions
 import requests
 import os
+from ghapi.all import GhApi
 from dotenv import load_dotenv
 import json
 from datetime import datetime
@@ -113,5 +114,27 @@ class ActionSnaketemp(Action):
             jasper_err = "Sorry, I wasn't able to hit the graphql endpoint at this time."
             print("An error occurred while fetching the data:", response.text)
             dispatcher.utter_message(text=jasper_err)
+
+        return []
+
+
+class ActionJasperGHCount(Action):
+
+    def name(self) -> Text:
+        return "action_jasper_gh_action_count"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        # NASA APOD API endpoint
+        github_token = os.getenv("GITHUB_TOKEN")
+        api = GhApi(owner='DevOps-With-Brian', repo='jasper-chat', token=github_token)
+        jasper_actions = api.actions.list_workflow_runs_for_repo(ref='heads/main')
+        jasper_build_count = jasper_actions['total_count']
+
+        # Print the total count of builds
+        jasper_response = "Sure, the current total number of builds that have ran for my code is currently {}".format(jasper_build_count)
+        dispatcher.utter_message(text=jasper_response)
 
         return []

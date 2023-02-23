@@ -182,3 +182,25 @@ stories:
   - action: utter_greet
   - intent: snake_room_temp
   - action: action_snake_temp
+
+# Jasper Github Action Count Paths
+- story: jasper_gh_action_count path 1
+  steps:
+  - intent: jasper_gh_action_count
+  - action: action_jasper_gh_action_count
+
+- story: jasper_gh_action_count path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help
+  - action: utter_help
+  - intent: jasper_gh_action_count
+  - action: action_jasper_gh_action_count
+
+- story: jasper_gh_action_count path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: jasper_gh_action_count
+  - action: action_jasper_gh_action_count
