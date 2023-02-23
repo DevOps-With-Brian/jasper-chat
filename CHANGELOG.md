@@ -1,3 +1,9 @@
+## 0.17.0 (2023-02-23)
+
+### Feat
+
+- **github-action**: adding in github action calls for jasper (#49)
+
 ## 0.16.0 (2023-02-22)
 
 ### Feat
