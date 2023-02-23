@@ -148,3 +148,11 @@ nlu:
     - what is the current snake room temperature
     - I'd like to know the snake room temperature
     - is there a way you can tell me about the snake room temps
+- intent: jasper_gh_action_count
+  examples: |
+    - how many builds currently have ran to get you where you are currently?
+    - how many builds have ran for your code?
+    - do you know how many build jobs have ran currently for you?
+    - I want to know a count of how many build jobs there are total for you.
+    - whats the total count of build jobs for jasperchat
+    - Can you tell me how many builds have ran so far for your code?

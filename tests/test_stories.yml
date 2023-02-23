@@ -270,3 +270,37 @@ stories:
       can you tell me the snake room temp please
     intent: snake_room_temp
   - action: action_snake_temp
+
+# Jasper Github Action Count Test Path
+- story: jasper_gh_action_count path 1
+  steps:
+  - user: |
+      I want to know a count of how many build jobs there are total for you.
+    intent: jasper_gh_action_count
+  - action: action_jasper_gh_action_count
+
+- story: jasper_gh_action_count path 2
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      What can you help with?
+    intent: help
+  - action: utter_help
+  - user: |
+      Can you tell me how many builds have ran so far for your code?
+    intent: jasper_gh_action_count
+  - action: action_jasper_gh_action_count
+
+- story: jasper_gh_action_count path 3
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      how many builds have ran for your code?
+    intent: jasper_gh_action_count
+  - action: action_jasper_gh_action_count
