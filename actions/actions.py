@@ -127,7 +127,7 @@ class ActionJasperGHCount(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        # NASA APOD API endpoint
+        # GitHub API endpoint
         github_token = os.getenv("GITHUB_TOKEN")
         api = GhApi(owner='DevOps-With-Brian', repo='jasper-chat', token=github_token)
         jasper_actions = api.actions.list_workflow_runs_for_repo(ref='heads/main')
@@ -136,5 +136,31 @@ class ActionJasperGHCount(Action):
         # Print the total count of builds
         jasper_response = "Sure, the current total number of builds that have ran for my code is currently {}".format(jasper_build_count)
         dispatcher.utter_message(text=jasper_response)
+
+        return []
+    
+
+class ActionGithubPR(Action):
+
+    def name(self) -> Text:
+        return "action_github_pr"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        # GitHub API endpoint
+        github_token = os.getenv("GITHUB_TOKEN")
+        api = GhApi(owner='DevOps-With-Brian', repo='jasper-chat', token=github_token)
+        jasper_pull_requests = api.pulls.list(state='open')
+
+        total_count_prs = len(jasper_pull_requests)
+
+        if total_count_prs:
+            jasper_response = "Yes I currently have {} pull requests open, for more information about them please see https://github.com/DevOps-With-Brian/jasper-chat/pulls".format(total_count_prs)
+            dispatcher.utter_message(text=jasper_response)
+        else:
+            jasper_response = "No I currently don't have any open pull requests, yay!"
+            dispatcher.utter_message(text=jasper_response)
 
         return []

@@ -304,3 +304,37 @@ stories:
       how many builds have ran for your code?
     intent: jasper_gh_action_count
   - action: action_jasper_gh_action_count
+
+# Jasper Github PR Test Path
+- story: github_pr path 1
+  steps:
+  - user: |
+      how many open pull requests do you have?
+    intent: github_pr
+  - action: action_github_pr
+
+- story: github_pr path 2
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      What can you help with?
+    intent: help
+  - action: utter_help
+  - user: |
+      do you have info about your open pr's
+    intent: github_pr
+  - action: action_github_pr
+
+- story: github_pr path 3
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      can you give me any info about any open pull requests you have?
+    intent: github_pr
+  - action: action_github_pr

@@ -204,3 +204,25 @@ stories:
   - action: utter_greet
   - intent: jasper_gh_action_count
   - action: action_jasper_gh_action_count
+
+# Jasper Github PR Paths
+- story: github_pr path 1
+  steps:
+  - intent: github_pr
+  - action: action_github_pr
+
+- story: github_pr path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help
+  - action: utter_help
+  - intent: github_pr
+  - action: action_github_pr
+
+- story: github_pr path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: github_pr
+  - action: action_github_pr
