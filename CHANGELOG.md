@@ -1,3 +1,9 @@
+## 0.18.0 (2023-02-25)
+
+### Feat
+
+- **pr-intent**: adding the ability to check if there are any open pr's (#56)
+
 ## 0.17.0 (2023-02-23)
 
 ### Feat
