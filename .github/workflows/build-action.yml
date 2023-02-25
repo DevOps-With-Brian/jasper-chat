@@ -12,7 +12,7 @@ jobs:
     name: Build and push Action Server image
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - id: action_server
       name: Build Action Image & Push To Dockerhub
