@@ -156,3 +156,11 @@ nlu:
     - I want to know a count of how many build jobs there are total for you.
     - whats the total count of build jobs for jasperchat
     - Can you tell me how many builds have ran so far for your code?
+- intent: github_pr
+  examples: |
+    - do you have any open pull requests?
+    - how many open pull requests do you have?
+    - can you give me any info about any open pull requests you have?
+    - are you able to give me any information about your open pr's?
+    - do you have info about your open pr's
+    - can you tell me how many open pull requests you have?
