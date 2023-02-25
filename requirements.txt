@@ -1,3 +1,3 @@
 rasa==3.4.4
-Commitizen==2.42.0
+Commitizen==2.42.1
 rasa-sdk==3.4.0
