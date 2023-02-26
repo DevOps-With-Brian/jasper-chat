@@ -164,3 +164,39 @@ class ActionGithubPR(Action):
             dispatcher.utter_message(text=jasper_response)
 
         return []
+    
+
+class ActionChuckNorris(Action):
+
+    def name(self) -> Text:
+        return "action_chuck_norris"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        # chuck norris API endpoint
+        api_url = "https://api.chucknorris.io/jokes/random?category=dev"
+
+        response = requests.get(api_url)
+
+        # Check the status code of the response
+        if response.status_code == 200:
+            # If the status code is 200 (OK), get the JSON data from the response
+            json_response = response.json()
+
+            print(json_response)
+
+            joke = json_response['value']
+
+            # Print the title and explanation of the APOD
+            jasper_response = joke
+            dispatcher.utter_message(text=jasper_response)
+
+        else:
+            # If the status code is not 200 (OK), print an error message
+            jasper_err = "Sorry, Chuck Norris appears to be taking a break atm...."
+            print("An error occurred trying to get a joke from chuck", response.content)
+            dispatcher.utter_message(text=jasper_err)
+
+        return []

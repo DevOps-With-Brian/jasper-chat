@@ -226,3 +226,25 @@ stories:
   - action: utter_greet
   - intent: github_pr
   - action: action_github_pr
+
+# Chuck Norris Jokes Paths
+- story: chuck_norris_jokes path 1
+  steps:
+  - intent: chuck_norris_jokes
+  - action: action_chuck_norris
+
+- story: chuck_norris_jokes path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help
+  - action: utter_help
+  - intent: chuck_norris_jokes
+  - action: action_chuck_norris
+
+- story: chuck_norris_jokes path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: chuck_norris_jokes
+  - action: action_chuck_norris
