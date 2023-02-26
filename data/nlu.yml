@@ -164,3 +164,12 @@ nlu:
     - are you able to give me any information about your open pr's?
     - do you have info about your open pr's
     - can you tell me how many open pull requests you have?
+- intent: chuck_norris_jokes
+  examples: |
+    - I would like a chuck norris joke please
+    - do you know any funny chuck norris jokes?
+    - can you give me a chuck norris joke
+    - I want to hear how awesome chuck norris is
+    - make me laugh chuck norris style
+    - I'd like to hear a funny chuck norris joke
+    - I'd like to hear a chuck norris joke

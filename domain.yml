@@ -19,6 +19,7 @@ intents:
 - snake_room_temp
 - jasper_gh_action_count
 - github_pr
+- chuck_norris_jokes
 responses:
   utter_out_of_scope:
   - text: I'm sorry I don't know how to answer that yet, but I'm learning new things every day!
@@ -51,3 +52,4 @@ actions:
 - action_snake_temp
 - action_jasper_gh_action_count
 - action_github_pr
+- action_chuck_norris

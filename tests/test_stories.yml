@@ -338,3 +338,37 @@ stories:
       can you give me any info about any open pull requests you have?
     intent: github_pr
   - action: action_github_pr
+
+# Chuck Norris Jokes Test Path
+- story: chuck_norris_jokes path 1
+  steps:
+  - user: |
+      I would like a chuck norris joke please
+    intent: chuck_norris_jokes
+  - action: action_chuck_norris
+
+- story: chuck_norris_jokes path 2
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      What can you help with?
+    intent: help
+  - action: utter_help
+  - user: |
+      I'd like to hear a funny chuck norris joke
+    intent: chuck_norris_jokes
+  - action: action_chuck_norris
+
+- story: chuck_norris_jokes path 3
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      can you give me any info about any open pull requests you have?
+    intent: chuck_norris_jokes
+  - action: action_chuck_norris
