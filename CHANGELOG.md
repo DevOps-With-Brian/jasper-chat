@@ -1,3 +1,9 @@
+## 0.19.0 (2023-02-26)
+
+### Feat
+
+- **chuck_norris**: adding in chuck norris jokes that are based on the dev category (#60)
+
 ## 0.18.0 (2023-02-25)
 
 ### Feat
