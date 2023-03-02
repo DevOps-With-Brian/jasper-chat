@@ -1,3 +1,9 @@
+## 0.20.0 (2023-03-02)
+
+### Feat
+
+- **doppler-intent**: adding in the new doppler intent to allow for i… (#62)
+
 ## 0.19.0 (2023-02-26)
 
 ### Feat
