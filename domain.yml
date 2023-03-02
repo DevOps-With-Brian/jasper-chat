@@ -20,6 +20,7 @@ intents:
 - jasper_gh_action_count
 - github_pr
 - chuck_norris_jokes
+- doppler
 responses:
   utter_out_of_scope:
   - text: I'm sorry I don't know how to answer that yet, but I'm learning new things every day!
@@ -43,6 +44,8 @@ responses:
   - text: DevOps can mean a lot of things to a lot of different people, however at its very basic practice it is using a set of tools, pratices, and cultural philosophy's to automate and/or integrate processes between a software/development team and traditional IT/Operations teams.  Typically a job of a DevOps engineer is to optimize and speed up software delivery processes.  For more information please see https://www.atlassian.com/devops
   utter_what_is_iac:
   - text: Infrastructure As Code or also know as IaC is a methodology of creating your infrastructure resources using software development methods and tools like Terraform for instance to deploy cloud or on prem resources via code.  For more information see https://www.atlassian.com/microservices/cloud-computing/infrastructure-as-code
+  utter_doppler:
+  - text: Doppler is a SecretOps platform that works across multiple platforms, local dev, aws, azure, kubernetes, python, rpi, and more.  You can sign up and get more info by going to https://doppler.com/join?invite=524473B9 and you get a free $100 credit if you decide to move off the free tier. 
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

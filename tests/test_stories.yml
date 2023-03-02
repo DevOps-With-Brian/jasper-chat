@@ -372,3 +372,38 @@ stories:
       can you give me any info about any open pull requests you have?
     intent: chuck_norris_jokes
   - action: action_chuck_norris
+
+
+# Doppler Test Path
+- story: doppler path 1
+  steps:
+  - user: |
+      what are you using for secrets management on stream?
+    intent: doppler
+  - action: utter_doppler
+
+- story: doppler path 2
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      What can you help with?
+    intent: help
+  - action: utter_help
+  - user: |
+      can you give me more information on doppler
+    intent: doppler
+  - action: utter_doppler
+
+- story: doppler path 3
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      what is this doppler thing you speak of?
+    intent: doppler
+  - action: utter_doppler
