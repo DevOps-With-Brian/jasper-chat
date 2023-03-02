@@ -248,3 +248,25 @@ stories:
   - action: utter_greet
   - intent: chuck_norris_jokes
   - action: action_chuck_norris
+
+# Doppler Paths
+- story: doppler path 1
+  steps:
+  - intent: doppler
+  - action: utter_doppler
+
+- story: doppler path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help
+  - action: utter_help
+  - intent: doppler
+  - action: utter_doppler
+
+- story: doppler path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: doppler
+  - action: utter_doppler

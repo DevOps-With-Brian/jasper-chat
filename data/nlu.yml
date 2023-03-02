@@ -173,3 +173,12 @@ nlu:
     - make me laugh chuck norris style
     - I'd like to hear a funny chuck norris joke
     - I'd like to hear a chuck norris joke
+- intent: doppler
+  examples: |
+    - what is doppler?
+    - do you have a doppler referral link?
+    - what are you using for secrets management on stream?
+    - can you tell me more information about doppler?
+    - I want to know more information about doppler
+    - can you give me more information on doppler
+    - what is this doppler thing you speak of?
