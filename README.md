@@ -47,6 +47,12 @@ There are also a few env vars/secrets used and we currently use [Doppler](https:
 
 `export GITHUB_TOKEN=XXX` - This is a GitHub API token that has access to read action builds and such, you can skip this if not building new intents or responses related to this.
 
+Now to run the action server you can do:
+
+cd back to the main root of the repo `cd ..`
+
+`rasa run actions`
+
 # How To Run Locally
 After performing the above you can run the bot locally via:
 
