@@ -6,6 +6,8 @@ A chatbot for my Twitch and Website that uses auto versioning via [Commitizen](h
 # Documentation
 You can visit [ReadTheDocs](https://jasper-chat.readthedocs.io/en/latest/) online or you can follow the steps below to generate them locally, most more in depth information is documented here.
 
+Most things below plus more in-depth information is located at the docs above which are also built from the `docs` dir.
+
 ## Building Docs Locally
 You can cd into the `docs` dir and setup a python venv and install the `requirements.txt` file from this dir and then do `make html` to generate these, this is just using the typical sphinx setup nothing crazy.
 
@@ -47,11 +49,17 @@ There are also a few env vars/secrets used and we currently use [Doppler](https:
 
 `export GITHUB_TOKEN=XXX` - This is a GitHub API token that has access to read action builds and such, you can skip this if not building new intents or responses related to this.
 
+For further information about not having to use these vars please see the docs at https://docs.doppler.com/docs/install-cli for more information and use https://doppler.com/join?invite=524473B9 to sign up for $100 free credit.
+
 Now to run the action server you can do:
 
 cd back to the main root of the repo `cd ..`
 
 `rasa run actions`
+
+If running with doppler would be:
+
+`doppler run -- rasa run actions`
 
 # How To Run Locally
 After performing the above you can run the bot locally via:
