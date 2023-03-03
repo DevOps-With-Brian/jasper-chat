@@ -5,14 +5,12 @@
 
 Welcome to jasper's documentation!
 ==================================
-This is documentation for project jasper which is a chatbot made on `Rasa <https://rasa.com/docs/rasa/>`_ 
+A chatbot for my Twitch and Website that uses auto versioning via `Commitizen <https://commitizen-tools.github.io/commitizen/>`_ and runs off `Rasa <https://www.rasa.com>`_.
 
-.. Hidden TOCs
 
 .. toctree::
    :maxdepth: 3
    :caption: Documentation
-   :hidden:
 
    initial_setup
    contributing_to_bot
