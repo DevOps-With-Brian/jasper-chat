@@ -50,7 +50,7 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 actions:
-- utter_out_of_scope
+- action_oos
 - action_apod
 - action_snake_temp
 - action_jasper_gh_action_count
