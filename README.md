@@ -3,6 +3,13 @@
 
 A chatbot for my Twitch and Website that uses auto versioning via [Commitizen](https://commitizen-tools.github.io/commitizen/) and runs off [Rasa](https://www.rasa.com).
 
+# Documentation
+You can visit [ReadTheDocs](https://jasper-chat.readthedocs.io/en/latest/) online or you can follow the steps below to generate them locally, most more in depth information is documented here.
+
+## Building Docs Locally
+You can cd into the `docs` dir and setup a python venv and install the `requirements.txt` file from this dir and then do `make html` to generate these, this is just using the typical sphinx setup nothing crazy.
+
+
 # Environment Setup
 I recommend if running on windows to setup WSL2 and setup ubuntu on it.  Then you can clone the repo to this setup and do `code .` with Visual Studio installed on your windows machine and edit the code,etc.  If you are on a Mac some of this will differ depending on Rasa.  Rasa up until recently had issues with silicon macs due to a tensorflow issue, this should have been resolved in the most recent version we are using.
 
@@ -22,6 +29,23 @@ Once activated we can install with:
 `pip install -r requirements.txt`
 
 This will install [Rasa](https://www.rasa.com) and [Commitizen](https://commitizen-tools.github.io/commitizen/)
+
+## Setting Up Action Server
+For certain things to work that make external API calls you need to also run the action server, that can be done by using the same previous venv you already setup and activate it:
+
+cd into the `actions` directory
+
+`source .venv/bin/activate`
+
+Then install the action server requirements:
+
+`pip install -r actions.py`
+
+There are also a few env vars/secrets used and we currently use [Doppler](https://doppler.com/join?invite=524473B9) for this but you can also just setup your own env vars via:
+
+`export NASA_API_KEY=XXX` - This is the Nasa API where you can get your own key at https://api.nasa.gov/
+
+`export GITHUB_TOKEN=XXX` - This is a GitHub API token that has access to read action builds and such, you can skip this if not building new intents or responses related to this.
 
 # How To Run Locally
 After performing the above you can run the bot locally via:
