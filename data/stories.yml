@@ -91,9 +91,9 @@ stories:
 - story: interactive_story_1
   steps:
   - intent: out_of_scope
-  - action: utter_out_of_scope
+  - action: action_oos
   - intent: out_of_scope
-  - action: utter_out_of_scope
+  - action: action_oos
 
 # Nasa Story Path
 - story: nasa_apod repo path 1

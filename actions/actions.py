@@ -200,3 +200,18 @@ class ActionChuckNorris(Action):
             dispatcher.utter_message(text=jasper_err)
 
         return []
+    
+
+class ActionOOS(Action):
+
+    def name(self) -> Text:
+        return "action_oos"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        print(tracker.latest_message)
+        dispatcher.utter_message(text="oos")
+
+        return []

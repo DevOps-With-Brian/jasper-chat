@@ -20,9 +20,9 @@ rules:
 - rule: out-of-scope
   steps:
   - intent: out_of_scope
-  - action: utter_out_of_scope
+  - action: action_oos
 
 - rule: out-of-scope-low-confidence
   steps:
   - intent: nlu_fallback
-  - action: utter_out_of_scope
+  - action: action_oos
