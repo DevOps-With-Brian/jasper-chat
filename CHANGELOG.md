@@ -1,3 +1,9 @@
+## 0.21.0 (2023-03-03)
+
+### Feat
+
+- **jasper-reins**: allowing jasper to talk more openly in a certain bot_testing channel in discord (#63)
+
 ## 0.20.0 (2023-03-02)
 
 ### Feat
