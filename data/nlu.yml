@@ -182,3 +182,12 @@ nlu:
     - I want to know more information about doppler
     - can you give me more information on doppler
     - what is this doppler thing you speak of?
+- intent: discord
+  examples: |
+    - where is the discord link?
+    - do you have a discord server?
+    - do you have a discord community?
+    - can I join the discord server?
+    - is there a link to get into discord?
+    - where can I find discord?
+    - is there a discord link handy?
