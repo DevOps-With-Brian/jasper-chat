@@ -407,3 +407,37 @@ stories:
       what is this doppler thing you speak of?
     intent: doppler
   - action: utter_doppler
+
+# Discord Test Path
+- story: discord path 1
+  steps:
+  - user: |
+      where is the discord link?
+    intent: discord
+  - action: utter_discord
+
+- story: discord path 2
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      What can you help with?
+    intent: help
+  - action: utter_help
+  - user: |
+      can I have the discord link?
+    intent: discord
+  - action: utter_discord
+
+- story: discord path 3
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      where is the discord server?
+    intent: discord
+  - action: utter_discord

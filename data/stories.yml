@@ -270,3 +270,25 @@ stories:
   - action: utter_greet
   - intent: doppler
   - action: utter_doppler
+
+# Discord Paths
+- story: discord path 1
+  steps:
+  - intent: discord
+  - action: utter_discord
+
+- story: discord path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help
+  - action: utter_help
+  - intent: discord
+  - action: utter_discord
+
+- story: discord path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: discord
+  - action: utter_discord
