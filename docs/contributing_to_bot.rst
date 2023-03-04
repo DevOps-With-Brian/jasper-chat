@@ -96,7 +96,7 @@ This is a conventional commit and will pass initial PR checks, ensure you use th
 
 Testing Bot Locally
 ^^^^^^^^^^^^^^^^^^^^
-Ensure you have tested via the `rasa shell` command to make sure your bot works as expected and also run `rasa test -s tests` and then check the `results/failed_test_stories.yml` for any failed stories.
+Ensure you have tested via the :literal:`rasa shell` command to make sure your bot works as expected and also run :literal:`rasa test -s tests` and then check the :literal:`results/failed_test_stories.yml` for any failed stories.
 
 
 Adding Code & Pushing
