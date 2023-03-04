@@ -1,3 +1,9 @@
+## 0.22.0 (2023-03-04)
+
+### Feat
+
+- **discord**: adding in a new discord intent to answer where our discord server is (#64)
+
 ## 0.21.0 (2023-03-03)
 
 ### Feat
