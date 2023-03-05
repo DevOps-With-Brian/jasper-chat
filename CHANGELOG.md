@@ -1,3 +1,9 @@
+## 0.23.0 (2023-03-05)
+
+### Feat
+
+- **intent-cz**: adding in intent for commitizen responses (#65)
+
 ## 0.22.0 (2023-03-04)
 
 ### Feat
