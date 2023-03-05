@@ -191,3 +191,11 @@ nlu:
     - is there a link to get into discord?
     - where can I find discord?
     - is there a discord link handy?
+- intent: commitizen
+  examples: |
+    - What is that cz command you are running?
+    - What is commitizen?
+    - how are you doing that commit message cli gui?
+    - what is the cz command I keep seeing?
+    - can anyone tell me what cz is?
+    - Has anyone ever heard of commitizen?

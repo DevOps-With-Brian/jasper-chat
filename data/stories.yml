@@ -292,3 +292,25 @@ stories:
   - action: utter_greet
   - intent: discord
   - action: utter_discord
+
+# Commitizen Paths
+- story: commitizen path 1
+  steps:
+  - intent: commitizen
+  - action: utter_commitizen
+
+- story: commitizen path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help
+  - action: utter_help
+  - intent: commitizen
+  - action: utter_commitizen
+
+- story: commitizen path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: commitizen
+  - action: utter_commitizen

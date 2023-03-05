@@ -441,3 +441,37 @@ stories:
       where is the discord server?
     intent: discord
   - action: utter_discord
+
+# Commitizen Test Path
+- story: commitizen path 1
+  steps:
+  - user: |
+      What is that cz command you are running?
+    intent: commitizen
+  - action: utter_commitizen
+
+- story: commitizen path 2
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      What can you help with?
+    intent: help
+  - action: utter_help
+  - user: |
+      can anyone tell me what cz is?
+    intent: commitizen
+  - action: utter_commitizen
+
+- story: commitizen path 3
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      how are you doing that commit message cli gui?
+    intent: commitizen
+  - action: utter_commitizen

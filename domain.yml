@@ -22,6 +22,7 @@ intents:
 - chuck_norris_jokes
 - doppler
 - discord
+- commitizen
 responses:
   utter_out_of_scope:
   - text: I'm sorry I don't know how to answer that yet, but I'm learning new things every day!
@@ -49,6 +50,8 @@ responses:
   - text: Doppler is a SecretOps platform that works across multiple platforms, local dev, aws, azure, kubernetes, python, rpi, and more.  You can sign up and get more info by going to https://doppler.com/join?invite=524473B9 and you get a free $100 credit if you decide to move off the free tier.
   utter_discord:
   - text: Sure we have a discord community you can join, please use this link - https://discord.gg/2ZkhQxNs5A
+  utter_commitizen:
+  - text: cz is a shortcut for the tool commitizen, https://commitizen-tools.github.io/commitizen/bump/, which is used to make conventional commits easier and is used by Brian for auto versioning his projects.
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
