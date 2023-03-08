@@ -199,3 +199,11 @@ nlu:
     - what is the cz command I keep seeing?
     - can anyone tell me what cz is?
     - Has anyone ever heard of commitizen?
+- intent: cloud
+  examples: |
+    - what is a cloud?
+    - what is cloud computing?
+    - what is this cloud everyone keeps talking about?
+    - can you tell me more about cloud computing?
+    - can you give me more information about what cloud is in reference to technology?
+    - what in the heck is this cloud stuff everyone is talking about?
