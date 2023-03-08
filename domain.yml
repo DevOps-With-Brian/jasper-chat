@@ -23,6 +23,7 @@ intents:
 - doppler
 - discord
 - commitizen
+- cloud
 responses:
   utter_out_of_scope:
   - text: I'm sorry I don't know how to answer that yet, but I'm learning new things every day!
@@ -52,6 +53,8 @@ responses:
   - text: Sure we have a discord community you can join, please use this link - https://discord.gg/2ZkhQxNs5A
   utter_commitizen:
   - text: cz is a shortcut for the tool commitizen, https://commitizen-tools.github.io/commitizen/bump/, which is used to make conventional commits easier and is used by Brian for auto versioning his projects.
+  utter_cloud:
+  - text: Cloud computing refers to the delivery of computing services, including servers, storage, databases, networking, software, and analytics, over the internet. Rather than owning and maintaining physical servers and infrastructure, cloud computing allows individuals and businesses to easily access and use these services on a pay-as-you-go basis, only paying for what they need and use.
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

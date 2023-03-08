@@ -314,3 +314,25 @@ stories:
   - action: utter_greet
   - intent: commitizen
   - action: utter_commitizen
+
+# Cloud Paths
+- story: cloud path 1
+  steps:
+  - intent: cloud
+  - action: utter_cloud
+
+- story: cloud path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help
+  - action: utter_help
+  - intent: cloud
+  - action: utter_cloud
+
+- story: cloud path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: cloud
+  - action: utter_cloud
