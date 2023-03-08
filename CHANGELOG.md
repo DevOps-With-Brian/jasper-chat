@@ -1,3 +1,9 @@
+## 0.24.0 (2023-03-08)
+
+### Feat
+
+- **cloud-intent**: adding in the cloud intent response (#68)
+
 ## 0.23.0 (2023-03-05)
 
 ### Feat
