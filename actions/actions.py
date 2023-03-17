@@ -9,6 +9,7 @@ from ghapi.all import GhApi
 from dotenv import load_dotenv
 import json
 from datetime import datetime
+import openai
 
 load_dotenv()
 
@@ -212,6 +213,21 @@ class ActionOOS(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         print(tracker.latest_message)
-        dispatcher.utter_message(text="oos")
+
+        user_message = tracker.latest_message.get("text")
+        openai.api_key = os.getenv("OPENAI_KEY")
+
+        response = openai.Completion.create(
+            engine="text-davinci-002",
+            prompt=user_message,
+            max_tokens=150,
+            n=1,
+            stop=None,
+            temperature=0.5,
+        )
+
+        reply = response.choices[0].text.strip()
+
+        dispatcher.utter_message(text=reply)
 
         return []
