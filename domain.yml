@@ -17,7 +17,6 @@ intents:
 - what_is_devops
 - what_is_iac
 - snake_room_temp
-- jasper_gh_action_count
 - github_pr
 - chuck_norris_jokes
 - doppler
@@ -62,6 +61,5 @@ actions:
 - action_oos
 - action_apod
 - action_snake_temp
-- action_jasper_gh_action_count
 - action_github_pr
 - action_chuck_norris
