@@ -1,3 +1,9 @@
+## 0.27.1 (2023-03-19)
+
+### Fix
+
+- **fallbacks**: fixing the way the fallbacks and confidence scores work (#72)
+
 ## 0.27.0 (2023-03-17)
 
 ### Feat
