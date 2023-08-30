@@ -29,7 +29,7 @@ jobs:
       - name: Rasa Train and Test GitHub Action
         uses: RasaHQ/rasa-train-test-gha@main
         with:
-          rasa_version: '3.3.0'
+          rasa_version: '3.6.2'
           data_validate: true
           rasa_train: true
           cross_validation: false
