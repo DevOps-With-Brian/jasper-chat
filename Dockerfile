@@ -1,5 +1,5 @@
 # Extend the official Rasa SDK image
-FROM rasa/rasa-sdk:3.6.2
+FROM rasa/rasa-sdk:3.10.1
 
 # Use subdirectory as working directory
 WORKDIR /app
